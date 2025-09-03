@@ -21,11 +21,6 @@ L’objectif est de comparer différentes stratégies d’allocation — d’un 
 
 ## 📊 Project Structure / Structure du projet
 
-1. **Benchmark Portfolio (Equal-Weight) / Portefeuille de référence (Équipondéré)**  
-   - Naive allocation: 20% in each stock.  
-   - Allocation naïve : 20% dans chaque action.  
-
-   ![Equal-Weight Portfolio](images/equal_weight.png)
 
 1. **Benchmark Portfolio (Equal-Weight) / Portefeuille de référence (Équipondéré)**  
    - Naive allocation: each asset weight = 1/N (here N=5 → 20%).  
@@ -34,13 +29,25 @@ L’objectif est de comparer différentes stratégies d’allocation — d’un 
    ![Equal-Weight Portfolio](images/equal_weight.png)
 
 
-2. **Minimum Volatility Portfolio / Portefeuille à Volatilité Minimale**  
-   - Mean–variance optimization.  
-   - Optimisation moyenne-variance.  
-   - Objective: reduce portfolio volatility.  
-   - Objectif : réduire la volatilité du portefeuille.  
+2. Minimum Volatility Portfolio / Portefeuille à Volatilité Minimale
+- Mean–variance optimization (Markowitz framework).
+- Optimisation moyenne–variance (cadre de Markowitz).
+- Objective: find the portfolio weights w = (w1, w2, …, wn) that minimize the variance of returns.
+- Objectif : trouver les poids du portefeuille w = (w1, w2, …, wn) qui minimisent la variance des rendements.
 
-   ![Minimum Volatility Portfolio](images/min_vol.png)
+Mathematical formulation:
+Minimize:  σ_p² = wᵀ Σ w
+Subject to: ∑ wi = 1  and  wi ≥ 0
+
+Where:
+σ_p² = variance of the portfolio
+Σ = covariance matrix of asset returns
+wi = weight of asset i
+
+This portfolio provides the lowest possible risk (volatility) for a given set of assets.
+
+![Minimum Volatility Portfolio](images/min_vol.png)
+
 
 3. **Maximum Sharpe Portfolio / Portefeuille à Ratio de Sharpe Maximum**  
    - Mean–variance optimization.  
