@@ -27,6 +27,13 @@ L’objectif est de comparer différentes stratégies d’allocation — d’un 
 
    ![Equal-Weight Portfolio](images/equal_weight.png)
 
+1. **Benchmark Portfolio (Equal-Weight) / Portefeuille de référence (Équipondéré)**  
+   - Naive allocation: each asset weight = 1/N (here N=5 → 20%).  
+   - Allocation naïve : poids de chaque actif = 1/N (ici N=5 → 20%).  
+
+   ![Equal-Weight Portfolio](images/equal_weight.png)
+
+
 2. **Minimum Volatility Portfolio / Portefeuille à Volatilité Minimale**  
    - Mean–variance optimization.  
    - Optimisation moyenne-variance.  
