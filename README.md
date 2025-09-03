@@ -49,19 +49,43 @@ This portfolio provides the lowest possible risk (volatility) for a given set of
 ![Minimum Volatility Portfolio](images/min_vol.png)
 
 
-3. **Maximum Sharpe Portfolio / Portefeuille à Ratio de Sharpe Maximum**  
-   - Mean–variance optimization.  
-   - Optimisation moyenne-variance.  
-   - Objective: maximize risk-adjusted return (Sharpe ratio).  
-   - Objectif : maximiser le rendement ajusté du risque (Sharpe).  
+3. Maximum Sharpe Portfolio / Portefeuille au Ratio de Sharpe Maximum
+- Mean–variance optimization with Sharpe ratio as objective.
+- Optimisation moyenne–variance en maximisant le ratio de Sharpe.
+- Objective: maximize risk-adjusted return, defined as the Sharpe ratio.
 
-   ![Maximum Sharpe Portfolio](images/max_sharpe.png)
+Sharpe ratio formula (risk-free rate Rf = 0% here):
+S = (E[R_p] – Rf) / σ_p  = E[R_p] / σ_p
 
-4. **Comparison & Reporting / Comparaison & Reporting**  
-   - Growth of \$1, annualized metrics, portfolio weights.  
-   - Croissance de \$1, mesures annualisées, poids des portefeuilles.  
+Mathematical formulation:
+Maximize:  S = (wᵀ μ) / √(wᵀ Σ w)
+Subject to: ∑ wi = 1  and  wi ≥ 0
 
-   ![Comparison of Portfolios](images/comparison.png)
+Where:
+E[R_p] = expected return of the portfolio
+μ = vector of expected returns of assets
+σ_p = portfolio volatility
+
+This portfolio gives the best trade-off between return and risk.
+
+![Maximum Sharpe Portfolio](images/max_sharpe.png)
+
+
+4. Comparison & Reporting / Comparaison et Reporting
+- Compare different portfolios (Equally Weighted, Minimum Volatility, Maximum Sharpe).
+- Comparer différents portefeuilles (équipondéré, volatilité minimale, Sharpe maximum).
+- Metrics used: growth of $1 invested, annualized expected return, annualized volatility, Sharpe ratio, portfolio weights.
+- Mesures utilisées : croissance de $1 investi, rendement espéré annualisé, volatilité annualisée, ratio de Sharpe, pondérations des portefeuilles.
+
+Mathematical indicators:
+E[R_p] = expected annualized return
+σ_p = annualized volatility
+S = Sharpe ratio = E[R_p] / σ_p
+
+This comparison highlights the efficiency of optimized portfolios versus the simple equally weighted benchmark.
+
+![Comparison of Portfolios](images/comparison.png)
+
 
 ---
 
