@@ -11,11 +11,11 @@ This project applies **Modern Portfolio Theory (MPT)** to a portfolio of FAANG s
 Ce projet applique la **Théorie Moderne du Portefeuille (Markowitz)** à un portefeuille FAANG  
 (**AAPL, AMZN, GOOGL, META, NFLX**) en utilisant des données quotidiennes de 2020 à 2023.  
 
-The objective is to compare different allocation strategies — from a simple equal-weight benchmark  
-to optimized portfolios — and evaluate their **risk–return trade-offs**.  
+The objective is to compare different allocation strategies  from a simple equal-weight benchmark  
+to optimized portfolios and evaluate their **risk–return trade-offs**.  
 
-L’objectif est de comparer différentes stratégies d’allocation — d’un portefeuille équipondéré simple  
-à des portefeuilles optimisés — et d’évaluer leurs compromis **rendement/risque**.  
+L’objectif est de comparer différentes stratégies d’allocation d’un portefeuille équipondéré simple  
+à des portefeuilles optimisés et d’évaluer leurs compromis **rendement/risque**.  
 
 ---
 
