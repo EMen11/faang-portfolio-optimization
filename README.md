@@ -1,5 +1,7 @@
 # faang-portfolio-optimization
-Application of Modern Portfolio Theory (MPT) to FAANG stocks (2020–2023). Analyse de portefeuilles : équipondéré, volatilité minimale et Sharpe maximal.
+Application of Modern Portfolio Theory (MPT) to FAANG stocks (2020–2023).  
+Analyse de portefeuilles : équipondéré, volatilité minimale et Sharpe maximal.
+
 # FAANG Portfolio Optimization (2020–2023)  
 # Optimisation de Portefeuille FAANG (2020–2023)
 
@@ -23,11 +25,15 @@ L’objectif est de comparer différentes stratégies d’allocation — d’un 
    - Naive allocation: 20% in each stock.  
    - Allocation naïve : 20% dans chaque action.  
 
+   ![Equal-Weight Portfolio](images/equal_weight.png)
+
 2. **Minimum Volatility Portfolio / Portefeuille à Volatilité Minimale**  
    - Mean–variance optimization.  
    - Optimisation moyenne-variance.  
    - Objective: reduce portfolio volatility.  
    - Objectif : réduire la volatilité du portefeuille.  
+
+   ![Minimum Volatility Portfolio](images/min_vol.png)
 
 3. **Maximum Sharpe Portfolio / Portefeuille à Ratio de Sharpe Maximum**  
    - Mean–variance optimization.  
@@ -35,9 +41,13 @@ L’objectif est de comparer différentes stratégies d’allocation — d’un 
    - Objective: maximize risk-adjusted return (Sharpe ratio).  
    - Objectif : maximiser le rendement ajusté du risque (Sharpe).  
 
+   ![Maximum Sharpe Portfolio](images/max_sharpe.png)
+
 4. **Comparison & Reporting / Comparaison & Reporting**  
    - Growth of \$1, annualized metrics, portfolio weights.  
    - Croissance de \$1, mesures annualisées, poids des portefeuilles.  
+
+   ![Comparison of Portfolios](images/comparison.png)
 
 ---
 
@@ -53,13 +63,6 @@ L’objectif est de comparer différentes stratégies d’allocation — d’un 
 ---
 
 ## 📈 Results / Résultats
-
-### Growth of \$1 (2020–2023)  
-### Croissance de \$1 (2020–2023)  
-
-![Portfolio Growth](images/portfolio_growth.png)
-
----
 
 ### Annualized Performance Summary / Résumé des Performances Annualisées
 
@@ -140,3 +143,4 @@ L’objectif est de comparer différentes stratégies d’allocation — d’un 
 👤 **Author / Auteur**: E.Menassa  
 💼 Aspiring Data & Risk Analyst | Passionate about Finance & Quantitative Research  
 💼 Analyste Données & Risques en devenir | Passionné par la Finance & la Recherche Quantitative
+
