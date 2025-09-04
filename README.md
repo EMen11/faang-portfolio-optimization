@@ -19,7 +19,7 @@ L’objectif est de comparer différentes stratégies d’allocation d’un port
 
 ---
 
-## 📊 Project Structure / Structure du projet
+## Project Structure / Structure du projet
 
 
 1. **Benchmark Portfolio (Equal-Weight) / Portefeuille de référence (Équipondéré)**  
@@ -100,7 +100,7 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
-## 📈 Results / Résultats
+##  Results / Résultats
 
 ### Annualized Performance Summary / Résumé des Performances Annualisées
 
@@ -140,7 +140,7 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
-## 🚀 How to Run / Comment Exécuter
+##  How to Run / Comment Exécuter
 
 1. Clone this repository and place `faang_stocks.csv` in the root folder.  
    Clonez ce dépôt et placez `faang_stocks.csv` à la racine.  
@@ -157,28 +157,17 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
-## 🛠️ Tech Stack / Technologies Utilisées
+## Tech Stack / Technologies Utilisées
 
 - **Python** (pandas, numpy, matplotlib, scipy)  
 - **Optimization / Optimisation**: SLSQP (from `scipy.optimize`)  
 - **Data / Données**: FAANG daily prices (2020–2023)  
 
----
 
-## 📌 Next Steps (Possible Extensions) / Prochaines Étapes (Extensions Possibles)
-
-- Add **Efficient Frontier visualization** (Monte Carlo simulation).  
-- Ajouter une **visualisation de la frontière efficiente** (simulation Monte Carlo).  
-
-- Perform **scenario analysis** (COVID crash, 2022 sell-off, 2023 recovery).  
-- Effectuer une **analyse de scénarios** (crash COVID, krach 2022, reprise 2023).  
-
-- Introduce **transaction costs** or **short-selling constraints**.  
-- Introduire des **frais de transaction** ou des **contraintes de ventes à découvert**.  
 
 ---
 
-👤 **Author / Auteur**: E.Menassa  
-💼 Aspiring Data & Risk Analyst | Passionate about Finance & Quantitative Research  
-💼 Analyste Données & Risques en devenir | Passionné par la Finance & la Recherche Quantitative
+ **Author / Auteur**: E.Menassa  
+Aspiring Data & Risk Analyst | Passionate about Finance & Quantitative Research  
+Analyste Données & Risques en devenir | Passionné par la Finance & la Recherche Quantitative
 
