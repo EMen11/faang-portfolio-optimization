@@ -167,7 +167,5 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
- **Author / Auteur**: E.Menassa  
-Aspiring Data & Risk Analyst | Passionate about Finance & Quantitative Research  
-Analyste Données & Risques en devenir | Passionné par la Finance & la Recherche Quantitative
+
 
