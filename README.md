@@ -41,7 +41,7 @@ faang-portfolio-optimization/
 ## Analyse  
 
 
-1. **Benchmark Portfolio (Equal-Weight)
+1. **Benchmark Portfolio (Equal-Weight)**
    - Naive allocation: each asset weight = 1/N (here N=5 → 20%).  
   
 
