@@ -65,7 +65,7 @@ wi = weight of asset i
 
 This portfolio provides the lowest possible risk (volatility) for a given set of assets.
 
-![Minimum Volatility Portfolio](images/min_vol.png)
+![Minimum Volatility Portfolio](reports/figures/min_vol.png)
 
 
 3. Maximum Sharpe Portfolio 
@@ -87,7 +87,7 @@ E[R_p] = expected return of the portfolio
 
 This portfolio gives the best trade-off between return and risk.
 
-![Maximum Sharpe Portfolio](images/max_sharpe.png)
+![Maximum Sharpe Portfolio](reports/figures/max_sharpe.png)
 
 
 4. Comparison & Reporting 
@@ -103,12 +103,12 @@ S = Sharpe ratio = E[R_p] / σ_p
 
 This comparison highlights the efficiency of optimized portfolios versus the simple equally weighted benchmark.
 
-![Comparison of Portfolios](images/comparison.png)
+![Comparison of Portfolios](reports/figures/comparison.png)
 
 
 ---
 
-## ⚙️ Methodology 
+## Methodology 
 
 - **Returns**: arithmetic daily returns (`pct_change()`), annualized ×252.  
 - **Volatility**: standard deviation of returns, annualized ×√252.  
@@ -143,7 +143,7 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
-## 🗝️ Key Takeaways
+##  Key Takeaways
 
 - **Naive diversification (Equal-Weight)** underperformed both optimized portfolios.   
 
