@@ -38,72 +38,71 @@ faang-portfolio-optimization/
 
 ---
 
-## Analyse  
+## Analysis
 
+### 1. Benchmark Portfolio — Equal Weight  
+The baseline strategy allocates each asset an equal weight (1/N = 20%).  
+This naive diversification approach serves as the reference point to evaluate optimized portfolios.  
 
-1. **Benchmark Portfolio (Equal-Weight)**
-   - Naive allocation: each asset weight = 1/N (here N=5 → 20%).  
-  
+![Equal-Weight Portfolio](reports/figures/equal_weight.png)
 
-   ![Equal-Weight Portfolio](reports/figures/equal_weight.png)
+---
 
+### 2. Minimum-Variance Portfolio  
+Built within the **Markowitz mean–variance framework**, this portfolio minimizes total volatility  
+for a given set of assets under realistic constraints (*no short selling, fully invested*).
 
-2. Minimum Volatility Portfolio 
-- Mean–variance optimization (Markowitz framework).
+**Optimization problem:**
 
-- Objective: find the portfolio weights w = (w1, w2, …, wn) that minimize the variance of returns.
+\[
+\text{Minimize } \sigma_p^2 = w^T \Sigma w
+\quad \text{subject to } \sum_i w_i = 1,\; w_i \ge 0
+\]
 
+where  
+- \( \sigma_p^2 \): portfolio variance  
+- \( \Sigma \): covariance matrix of asset returns  
+- \( w_i \): portfolio weights  
 
-Mathematical formulation:
-Minimize:  σ_p² = wᵀ Σ w
-Subject to: ∑ wi = 1  and  wi ≥ 0
-
-Where:
-σ_p² = variance of the portfolio
-Σ = covariance matrix of asset returns
-wi = weight of asset i
-
-This portfolio provides the lowest possible risk (volatility) for a given set of assets.
+This portfolio achieves the **lowest attainable risk** given the data.  
 
 ![Minimum Volatility Portfolio](reports/figures/min_vol.png)
 
+---
 
-3. Maximum Sharpe Portfolio 
-- Mean–variance optimization with Sharpe ratio as objective.
+### 3. Maximum-Sharpe Portfolio  
+This strategy maximizes the **risk-adjusted return**, defined by the **Sharpe ratio**.  
+It finds the allocation that offers the **best trade-off between return and risk**.
 
-- Objective: maximize risk-adjusted return, defined as the Sharpe ratio.
+**Optimization problem:**
 
-Sharpe ratio formula (risk-free rate Rf = 0% here):
-S = (E[R_p] – Rf) / σ_p  = E[R_p] / σ_p
+\[
+\text{Maximize } S = \frac{w^T \mu}{\sqrt{w^T \Sigma w}}
+\quad \text{subject to } \sum_i w_i = 1,\; w_i \ge 0
+\]
 
-Mathematical formulation:
-Maximize:  S = (wᵀ μ) / √(wᵀ Σ w)
-Subject to: ∑ wi = 1  and  wi ≥ 0
-
-Where:
-E[R_p] = expected return of the portfolio
-μ = vector of expected returns of assets
-σ_p = portfolio volatility
-
-This portfolio gives the best trade-off between return and risk.
+where  
+- \( \mu \): expected return vector  
+- \( S \): Sharpe ratio (here, risk-free rate \( R_f = 0\% \))  
 
 ![Maximum Sharpe Portfolio](reports/figures/max_sharpe.png)
 
+---
 
-4. Comparison & Reporting 
-- Compare different portfolios (Equally Weighted, Minimum Volatility, Maximum Sharpe).
+### 4. Portfolio Comparison  
+All three portfolios — **Equal-Weight**, **Minimum-Variance**, and **Maximum-Sharpe** —  
+are evaluated and compared across the following metrics:
+- Annualized return  
+- Annualized volatility  
+- Sharpe ratio  
+- Portfolio weights  
+- Growth of $1 invested  
 
-- Metrics used: growth of $1 invested, annualized expected return, annualized volatility, Sharpe ratio, portfolio weights.
+These comparisons highlight how optimization improves **risk–return efficiency**  
+relative to naive diversification.
 
+![Portfolio Comparison](reports/figures/comparison.png)
 
-Mathematical indicators:
-E[R_p] = expected annualized return
-σ_p = annualized volatility
-S = Sharpe ratio = E[R_p] / σ_p
-
-This comparison highlights the efficiency of optimized portfolios versus the simple equally weighted benchmark.
-
-![Comparison of Portfolios](reports/figures/comparaison.png)
 
 
 ---
