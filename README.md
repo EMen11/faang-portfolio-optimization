@@ -1,21 +1,27 @@
-# faang-portfolio-optimization
-Application of Modern Portfolio Theory (MPT) to FAANG stocks (2020–2023).  
-Analyse de portefeuilles : équipondéré, volatilité minimale et Sharpe maximal.
+# FAANG Portfolio Optimization (2020–2023)
 
-# FAANG Portfolio Optimization (2020–2023)  
-# Optimisation de Portefeuille FAANG (2020–2023)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-This project applies **Modern Portfolio Theory (MPT)** to a portfolio of FAANG stocks  
-(**AAPL, AMZN, GOOGL, META, NFLX**) using daily price data from 2020–2023.  
+This project applies **Modern Portfolio Theory (Markowitz)** to a universe of **FAANG stocks**  
+(**AAPL, AMZN, GOOGL, META, NFLX**) using daily market data from 2020 to 2023.
 
-Ce projet applique la **Théorie Moderne du Portefeuille (Markowitz)** à un portefeuille FAANG  
-(**AAPL, AMZN, GOOGL, META, NFLX**) en utilisant des données quotidiennes de 2020 à 2023.  
+It explores how different portfolio optimization strategies perform in terms of **return, risk, and efficiency**:
+- **Equal-weight portfolio** (naive benchmark)  
+- **Minimum-variance portfolio** (risk minimization objective)  
+- **Maximum-Sharpe portfolio** (risk-adjusted return maximization)
 
-The objective is to compare different allocation strategies  from a simple equal-weight benchmark  
-to optimized portfolios and evaluate their **risk–return trade-offs**.  
+Using the **mean–variance optimization framework**, each portfolio is constructed under realistic constraints  
+(no short-selling, full investment) and compared across key **performance metrics**:  
+annualized return, volatility, Sharpe ratio, and portfolio weights.
 
-L’objectif est de comparer différentes stratégies d’allocation d’un portefeuille équipondéré simple  
-à des portefeuilles optimisés et d’évaluer leurs compromis **rendement/risque**.  
+The analysis demonstrates how optimization improves the **risk–return efficiency** of a portfolio  
+even within a concentrated equity universe like FAANG.  
+Visual outputs include the **efficient frontier**, **weights allocation**, and **performance comparison** charts.
+
+---
+
 
 ---
 
