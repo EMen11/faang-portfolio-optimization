@@ -45,7 +45,7 @@ faang-portfolio-optimization/
    - Naive allocation: each asset weight = 1/N (here N=5 → 20%).  
   
 
-   ![Equal-Weight Portfolio](images/equal_weight.png)
+   ![Equal-Weight Portfolio](reports/figures/equal_weight.png)
 
 
 2. Minimum Volatility Portfolio 
