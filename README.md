@@ -103,7 +103,7 @@ S = Sharpe ratio = E[R_p] / σ_p
 
 This comparison highlights the efficiency of optimized portfolios versus the simple equally weighted benchmark.
 
-![Comparison of Portfolios](reports/figures/comparison.png)
+![Comparison of Portfolios](reports/figures/comparaison.png)
 
 
 ---
