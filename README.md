@@ -25,21 +25,21 @@ Visual outputs include the **efficient frontier**, **weights allocation**, and *
 
 ---
 
-## Project Structure / Structure du projet
+## Project Structure 
 
 
-1. **Benchmark Portfolio (Equal-Weight) / Portefeuille de référence (Équipondéré)**  
+1. **Benchmark Portfolio (Equal-Weight)
    - Naive allocation: each asset weight = 1/N (here N=5 → 20%).  
-   - Allocation naïve : poids de chaque actif = 1/N (ici N=5 → 20%).  
+  
 
    ![Equal-Weight Portfolio](images/equal_weight.png)
 
 
-2. Minimum Volatility Portfolio / Portefeuille à Volatilité Minimale
+2. Minimum Volatility Portfolio 
 - Mean–variance optimization (Markowitz framework).
-- Optimisation moyenne–variance (cadre de Markowitz).
+
 - Objective: find the portfolio weights w = (w1, w2, …, wn) that minimize the variance of returns.
-- Objectif : trouver les poids du portefeuille w = (w1, w2, …, wn) qui minimisent la variance des rendements.
+
 
 Mathematical formulation:
 Minimize:  σ_p² = wᵀ Σ w
@@ -55,9 +55,9 @@ This portfolio provides the lowest possible risk (volatility) for a given set of
 ![Minimum Volatility Portfolio](images/min_vol.png)
 
 
-3. Maximum Sharpe Portfolio / Portefeuille au Ratio de Sharpe Maximum
+3. Maximum Sharpe Portfolio 
 - Mean–variance optimization with Sharpe ratio as objective.
-- Optimisation moyenne–variance en maximisant le ratio de Sharpe.
+
 - Objective: maximize risk-adjusted return, defined as the Sharpe ratio.
 
 Sharpe ratio formula (risk-free rate Rf = 0% here):
@@ -77,11 +77,11 @@ This portfolio gives the best trade-off between return and risk.
 ![Maximum Sharpe Portfolio](images/max_sharpe.png)
 
 
-4. Comparison & Reporting / Comparaison et Reporting
+4. Comparison & Reporting 
 - Compare different portfolios (Equally Weighted, Minimum Volatility, Maximum Sharpe).
-- Comparer différents portefeuilles (équipondéré, volatilité minimale, Sharpe maximum).
+
 - Metrics used: growth of $1 invested, annualized expected return, annualized volatility, Sharpe ratio, portfolio weights.
-- Mesures utilisées : croissance de $1 investi, rendement espéré annualisé, volatilité annualisée, ratio de Sharpe, pondérations des portefeuilles.
+
 
 Mathematical indicators:
 E[R_p] = expected annualized return
@@ -95,20 +95,20 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
-## ⚙️ Methodology / Méthodologie
+## ⚙️ Methodology 
 
-- **Returns / Rendements**: arithmetic daily returns (`pct_change()`), annualized ×252.  
-- **Volatility / Volatilité**: standard deviation of returns, annualized ×√252.  
-- **Sharpe Ratio / Ratio de Sharpe**: (Return − Risk-Free) ÷ Volatility, risk-free = 0%.  
-- **Optimization / Optimisation**: `scipy.optimize.minimize` (SLSQP), constraints:  
-  - sum(weights) = 1 / somme des poids = 1  
-  - weights ≥ 0 / pas de ventes à découvert  
+- **Returns**: arithmetic daily returns (`pct_change()`), annualized ×252.  
+- **Volatility**: standard deviation of returns, annualized ×√252.  
+- **Sharpe Ratio**: (Return − Risk-Free) ÷ Volatility, risk-free = 0%.  
+- **Optimization**: `scipy.optimize.minimize` (SLSQP), constraints:  
+  - sum(weights) = 1
+  - weights ≥ 0 
 
 ---
 
-##  Results / Résultats
+##  Results
 
-### Annualized Performance Summary / Résumé des Performances Annualisées
+### Annualized Performance Summary 
 
 | Portfolio      | Return | Volatility | Sharpe (rf=0) |
 |----------------|--------|------------|---------------|
@@ -118,7 +118,7 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
-### Optimal Weights (%) / Poids Optimaux (%)
+### Optimal Weights (%) 
 
 | Ticker | Equal-Weight | Min-Vol | Max-Sharpe |
 |--------|--------------|---------|------------|
@@ -130,44 +130,37 @@ This comparison highlights the efficiency of optimized portfolios versus the sim
 
 ---
 
-## 🗝️ Key Takeaways / Points Clés
+## 🗝️ Key Takeaways
 
-- **Naive diversification (Equal-Weight)** underperformed both optimized portfolios.  
-- La **diversification naïve (équipondérée)** a sous-performé par rapport aux portefeuilles optimisés.  
+- **Naive diversification (Equal-Weight)** underperformed both optimized portfolios.   
 
-- **Min-Vol Portfolio** delivered lower risk and improved Sharpe, favoring AAPL + GOOGL.  
-- Le **Portefeuille Min-Vol** a réduit le risque et amélioré le Sharpe, en privilégiant AAPL + GOOGL.  
+- **Min-Vol Portfolio** delivered lower risk and improved Sharpe, favoring AAPL + GOOGL.    
 
 - **Max-Sharpe Portfolio** concentrated in AAPL (≈79%) and GOOGL (≈20%), achieving the best Sharpe.  
-- Le **Portefeuille Max-Sharpe** s’est concentré sur AAPL (≈79%) et GOOGL (≈20%), atteignant le meilleur Sharpe.  
 
-- Even within a concentrated FAANG universe, **optimization improves efficiency**.  
-- Même dans un univers concentré comme les FAANG, **l’optimisation améliore l’efficacité du portefeuille**.  
+- Even within a concentrated FAANG universe, **optimization improves efficiency**.   
 
 ---
 
-##  How to Run / Comment Exécuter
+##  How to Run
 
 1. Clone this repository and place `faang_stocks.csv` in the root folder.  
-   Clonez ce dépôt et placez `faang_stocks.csv` à la racine.  
 
 2. Run the Python scripts sequentially:  
-   Exécutez les scripts Python dans l’ordre :  
    - `part1_equal_weight.py`  
    - `part2_min_vol.py`  
    - `part3_max_sharpe.py`  
    - `part4_comparison.py`  
 
-3. Results (plots + CSV summaries) will be saved in the project directory.  
-   Les résultats (graphes + CSV) seront sauvegardés dans le dossier du projet.  
+3. Results (plots + CSV summaries) will be saved in the project directory.    
 
 ---
 
-## Tech Stack / Technologies Utilisées
+## Tech Stack 
 
 - **Python** (pandas, numpy, matplotlib, scipy)  
-- **Optimization / Optimisation**: SLSQP (from `scipy.optimize`)  
-- **Data / Données**: FAANG daily prices (2020–2023)  
+- **Optimization**: SLSQP (from `scipy.optimize`)  
+- **Data**: FAANG daily prices (2020–2023)  
 
 
 
