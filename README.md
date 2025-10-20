@@ -101,7 +101,7 @@ are evaluated and compared across key performance metrics:
 These comparisons highlight how optimization improves **risk–return efficiency**  
 relative to naive diversification.
 
-![Portfolio Comparison](reports/figures/comparison.png)
+![Portfolio Comparison](reports/figures/comparaison.png)
 
 
 
@@ -157,7 +157,7 @@ All portfolios are built on the same dataset and evaluated with identical metric
 | META   | 20.0         | 0.00    | 0.00       |
 | NFLX   | 20.0         | 6.96    | 1.29       |
 
-## 📊 Results
+##  Results
 
 ### Annualized Performance (2020–2023)
 
