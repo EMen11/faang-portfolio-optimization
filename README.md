@@ -134,29 +134,6 @@ All portfolios are built on the same dataset and evaluated with identical metric
 
 
 ---
-
-##  Results
-
-### Annualized Performance Summary 
-
-| Portfolio      | Return | Volatility | Sharpe (rf=0) |
-|----------------|--------|------------|---------------|
-| Equal-Weight   | 23.60% | 32.69%     | 0.72          |
-| Min-Vol        | 25.01% | 30.31%     | 0.83          |
-| Max-Sharpe     | 28.01% | 31.75%     | 0.88          |
-
----
-
-### Optimal Weights (%) 
-
-| Ticker | Equal-Weight | Min-Vol | Max-Sharpe |
-|--------|--------------|---------|------------|
-| AAPL   | 20.0         | 39.84   | 78.74      |
-| AMZN   | 20.0         | 14.91   | 0.00       |
-| GOOGL  | 20.0         | 38.29   | 19.97      |
-| META   | 20.0         | 0.00    | 0.00       |
-| NFLX   | 20.0         | 6.96    | 1.29       |
-
 ##  Results
 
 ### Annualized Performance (2020–2023)
