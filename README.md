@@ -21,11 +21,24 @@ even within a concentrated equity universe like FAANG.
 Visual outputs include the **efficient frontier**, **weights allocation**, and **performance comparison** charts.
 
 ---
+## Project Structure 
 
+```bash
+faang-portfolio-optimization/
+├── data/faang_prices.csv
+├── src/
+│   ├── part1_equal_weight.py
+│   ├── part2_min_vol.py
+│   ├── part3_max_sharpe.py
+│   └── part4_comparison.py
+├── reports/figures/
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## Project Structure 
+## Analyse  
 
 
 1. **Benchmark Portfolio (Equal-Weight)
