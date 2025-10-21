@@ -11,9 +11,10 @@ RISK_FREE = 0.0  # annualized risk-free rate (set to 0% for simplicity)
 print("CWD:", os.getcwd())
 
 # %% 1) Load prices
+# The CSV file must be located in the same working directory.
 CSV_PATHS = [
     "faang_stocks.csv",
-    "/Users/eliemenassa/Desktop/Projet 3/faang_stocks.csv",
+    "/.../faang_stocks.csv",
 ]
 df = None
 for p in CSV_PATHS:
