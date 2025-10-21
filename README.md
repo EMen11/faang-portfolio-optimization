@@ -211,10 +211,13 @@ While my main expertise is in **Python**, this experiment allowed me to better u
 
 **Output**
 
-Average daily return: 0.0772% | Daily volatility: 2.1904%
-Annualized return: 19.45% | Annualized volatility: 34.77%
+```bash
+Average daily return: 0.0772%  
+Daily volatility: 2.1904%
+Annualized return: 19.45% 
+Annualized volatility: 34.77%
 Sharpe ratio (annualized, rf=0.00%): 0.56
-
+```
 
 
 #### How to Run The Java Code(Terminal)
