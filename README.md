@@ -25,13 +25,22 @@ Visual outputs include the **efficient frontier**, **weights allocation**, and *
 
 ```bash
 faang-portfolio-optimization/
-├── data/faang_prices.csv
+├── data/
+│   └── faang_stocks.csv
+│
 ├── src/
-│   ├── part1_equal_weight.py
-│   ├── part2_min_vol.py
-│   ├── part3_max_sharpe.py
-│   └── part4_comparison.py
-├── reports/figures/
+│   ├── python/
+│   │   ├── part1_equal_weight.py
+│   │   ├── part2_min_vol.py
+│   │   ├── part3_max_sharpe.py
+│   │   └── part4_comparison.py
+│   │
+│   └── java/
+│       └── PortfolioStats.java
+│
+├── reports/
+│   └── figures/
+│
 ├── requirements.txt
 └── README.md
 ```
