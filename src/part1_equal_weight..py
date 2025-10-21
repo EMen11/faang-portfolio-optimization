@@ -15,7 +15,7 @@ print("Working directory:", os.getcwd())
 # %% 1) Load dataset
 # Load historical FAANG stock prices (2020–2023).
 # The CSV file must be located in the same working directory.
-CSV_PATH = "/Users/eliemenassa/Desktop/Projet/Projet 3/faang_stocks.csv"
+CSV_PATH = "/.../faang_stocks.csv"
 
 
 try:
