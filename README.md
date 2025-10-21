@@ -181,6 +181,42 @@ These findings confirm the benefits of **mean–variance optimization** even wit
 
 ---
 
+### Java Extension — Portfolio Statistics
+
+To complement the Python optimization, this project includes a small **Java** module that demonstrates basic quantitative computations in a compiled language.
+
+#### What it does
+- Reads daily FAANG prices from `data/faang_stocks.csv` (columns: `Date,AAPL,AMZN,GOOGL,META,NFLX`).
+- Builds an **equal-weighted portfolio** (20% each).
+- Computes **daily & annualized return**, **volatility**, and **Sharpe ratio**.
+- Illustrates multi-language capability for financial analytics (Python + Java).
+
+#### File
+`src/java/PortfolioStats.java`
+
+#### Prerequisites
+- **Java JDK 17+** (or newer, e.g. OpenJDK 21).  
+- *(Optional)* IntelliJ IDEA Community Edition for quick execution.
+
+**Output**
+
+Average daily return: 0.0772% | Daily volatility: 2.1904%
+Annualized return: 19.45% | Annualized volatility: 34.77%
+Sharpe ratio (annualized, rf=0.00%): 0.56
+
+
+
+#### How to Run (Terminal)
+```bash
+# From the repository root
+javac src/java/PortfolioStats.java
+java -cp src/java PortfolioStats
+```
+
+
+
+---
+
 ##  How to Run
 
 1. Clone this repository and ensure `data/faang_stocks.csv` is available.  
