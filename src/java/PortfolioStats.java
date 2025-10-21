@@ -4,7 +4,7 @@ import java.util.*;
 public class PortfolioStats {
 
     // Set the exact path to your CSV file here
-    static final String CSV_PATH = "/Users/eliemenassa/Desktop/Projet/Projet 3/faang_stocks.csv";
+    static final String CSV_PATH = "/.../faang_stocks.csv";
 
     public static void main(String[] args) throws Exception {
         List<double[]> prices = new ArrayList<>();
