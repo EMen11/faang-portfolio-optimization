@@ -15,9 +15,10 @@ TRADING_DAYS = 252
 
 print("CWD:", os.getcwd())
 # %% 1) Load prices
+# The CSV file must be located in the same working directory.
 CSV_PATHS = [
     "faang_stocks.csv",
-    "/Users/eliemenassa/Desktop/Projet 3/faang_stocks.csv",
+    "/.../faang_stocks.csv",
 ]
 df = None
 for p in CSV_PATHS:
