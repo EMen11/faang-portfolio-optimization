@@ -190,9 +190,11 @@ These findings confirm the benefits of **mean–variance optimization** even wit
 
 ---
 
-### Java Extension — Portfolio Statistics
+### Java Extension — Exploratory Module
 
-To complement the Python optimization, this project includes a small **Java** module that demonstrates basic quantitative computations in a compiled language.
+As a personal learning exercise, I added a small **Java** component to this project to explore how basic quantitative computations can be implemented in a compiled language.  
+While my main expertise is in **Python**, this experiment allowed me to better understand how Java handles file I/O and arithmetic operations for financial analytics.
+
 
 #### What it does
 - Reads daily FAANG prices from `data/faang_stocks.csv` (columns: `Date,AAPL,AMZN,GOOGL,META,NFLX`).
@@ -215,7 +217,7 @@ Sharpe ratio (annualized, rf=0.00%): 0.56
 
 
 
-#### How to Run (Terminal)
+#### How to Run The Java Code(Terminal)
 ```bash
 # From the repository root
 javac src/java/PortfolioStats.java
